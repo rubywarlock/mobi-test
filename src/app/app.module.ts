@@ -11,6 +11,7 @@ import { WebProjectsComponent } from './components/web-projects/web-projects.com
 import { MobileAppsComponent } from './components/mobile-apps/mobile-apps.component';
 import { HomeComponent } from './components/home/home.component';
 import { ThreefoldComponent } from './components/projects/threefold/threefold.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { ThreefoldComponent } from './components/projects/threefold/threefold.co
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

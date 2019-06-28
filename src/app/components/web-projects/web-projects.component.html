@@ -1,3 +1,7 @@
-<p>
-  web-projects works!
-</p>
+<div class="lessons-list" *ngIf="lessons else loading">
+  ready
+</div>
+
+<ng-template #loading>
+  <div>Loading...</div>
+</ng-template>
